@@ -19,11 +19,13 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 // 5. Du kan lave styling her...
 
-body{
-  background-color: #0a53be;
-}
-
-label{
-  width: 400px;
-  margin: 0 auto;
-}
+:root { --space: 2rem; }
+main .section { padding-block: clamp(2rem, 3vw, 3rem); }
+.lead { color: #6c757d; }
+.sidebar-sticky { position: sticky; top: 2rem; }
+.card-soft { border: 0; border-radius: 1rem; box-shadow: 0 6px 24px rgba(0,0,0,.06); }
+.figure-img { border-radius: .75rem; }
+.footer-links a { text-decoration: none; }
+.footer-links a:hover { text-decoration: underline; }
+.social-btn { width: 44px; height: 44px; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; }
+.social-btn:focus-visible { outline: 3px solid rgba(13,110,253,.35); outline-offset: 2px; }

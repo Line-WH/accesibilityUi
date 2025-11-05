@@ -19,25 +19,22 @@
 </head>
 
 <body>
-
+<!-- Skip links -->
 <a class="visually-hidden-focusable skip-link" href="#main">Spring til indhold</a>
 <a class="visually-hidden-focusable skip-link" href="#program">Spring til program</a>
 
+<!-- NAV -->
 <nav class="navbar navbar-expand-lg bg-dark-subtle" aria-label="Hovedmenu">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="/" aria-label="Forside: Slagelse Festuge">Slagelse Festuge</a>
-
-        <button class="navbar-toggler" type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent"
-                aria-controls="navbarSupportedContent"
-                aria-expanded="false"
-                aria-label="Åbn/luk navigation">
+    <div class="container">
+        <a class="navbar-brand fw-semibold" href="/" aria-label="Forside: Slagelse Festuge">Slagelse Festuge</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Åbn/luk navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-2">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="#bliv-partner">Bliv partner</a>
                 </li>
@@ -61,188 +58,212 @@
 </nav>
 
 <main id="main" tabindex="-1">
-    <section class="container py-4">
-        <header class="mb-3">
-            <h1>Slagelse festuge – din, min, vores festuge</h1>
-            <p class="lead">Danmarks hyggeligste havefest</p>
-        </header>
+    <!-- SECTION 1: Content + Sidebar -->
+    <section class="section">
+        <div class="container">
+            <div class="row g-5 align-items-start">
+                <!-- Left column: content -->
+                <div class="col-lg-8">
+                    <header class="mb-3">
+                        <h1 class="display-5 fw-semibold">Slagelse festuge – din, min, vores festuge</h1>
+                        <p class="lead mb-4">Danmarks hyggeligste havefest</p>
+                    </header>
 
-        <aside aria-labelledby="billede-overskrift" class="mb-4">
-            <h2 id="billede-overskrift" class="visually-hidden">Stemningsbillede</h2>
-            <figure>
-                <img
-                        class="img-fluid w-50"
-                        src="https://slagelsefestuge.dk/wp-content/uploads/DSC_8411-1-1536x967.jpg"
-                        alt="Publikum danser og smiler foran scenen under Slagelse Festuge"
-                        width="1536" height="967"
-                        loading="lazy" decoding="async">
-                <figcaption>Festglade mennesker til Slagelse Festuge.</figcaption>
-            </figure>
-        </aside>
+                    <section aria-labelledby="program-overskrift" class="mb-5">
+                        <h2 id="program-overskrift" class="h2 fw-bold">Programmet byder blandt andet på:</h2>
+                        <ul id="program" class="mt-3">
+                            <li><time datetime="2025-06-21">Lørdag 21. juni</time>: Strongman-konkurrence på Nytorv – oplev imponerende styrkepræstationer midt i byen.</li>
+                            <li><time datetime="2025-06-22">Søndag 22. juni</time>: Dyrernes Dag i Anlægget.</li>
+                            <li><time datetime="2025-06-23">Mandag 23. juni</time>: Sankt Hans i Anlægget – nyd en hyggelig aften med bål og fællesskab.
+                                <span class="badge text-bg-danger ms-2" aria-label="Arrangementet er aflyst">AFLYST</span>
+                            </li>
+                            <li><time datetime="2025-06-24">Tirsdag 24. juni</time>: Nordbo-løbet – snør løbeskoene og deltag i det populære motionsløb.</li>
+                            <li><time datetime="2025-06-25">Onsdag 25. juni</time>: Picnickoncert – tag tæppet med og nyd musik under åben himmel.</li>
+                            <li><time datetime="2025-06-26">Torsdag 26. juni</time>: Børn &amp; Ungedag – aktiviteter og underholdning for de yngste. Om aftenen er der LARM! på programmet!</li>
+                            <li><time datetime="2025-06-27">Fredag 27. juni</time>: Koncerter med Sømændene, George Michael Xperience, Specktors, OMAR og JIMILIAN.</li>
+                            <li><time datetime="2025-06-28">Lørdag 28. juni</time>: Afslutningskoncerter med Sko &amp; Torp, Birthe Kjær, Keen On Queen og Burhan G.</li>
+                        </ul>
+                    </section>
 
-        <section aria-labelledby="program-overskrift" class="mb-4">
-            <h2 id="program-overskrift">Programmet byder blandt andet på:</h2>
-            <ul id="program">
-                <li>
-                    <time datetime="2025-06-21">Lørdag 21. juni</time>:
-                    Strongman-konkurrence på Nytorv – oplev imponerende styrkepræstationer midt i byen.
-                </li>
-                <li>
-                    <time datetime="2025-06-22">Søndag 22. juni</time>:
-                    Dyrernes Dag i Anlægget.
-                </li>
-                <li>
-                    <time datetime="2025-06-23">Mandag 23. juni</time>:
-                    Sankt Hans i Anlægget – nyd en hyggelig aften med bål og fællesskab.
-                    <span class="badge text-bg-danger ms-2" aria-label="Arrangementet er aflyst">AFLYST</span>
-                </li>
-                <li>
-                    <time datetime="2025-06-24">Tirsdag 24. juni</time>:
-                    Nordbo-løbet – snør løbeskoene og deltag i det populære motionsløb.
-                </li>
-                <li>
-                    <time datetime="2025-06-25">Onsdag 25. juni</time>:
-                    Picnickoncert – tag tæppet med og nyd musik under åben himmel.
-                </li>
-                <li>
-                    <time datetime="2025-06-26">Torsdag 26. juni</time>:
-                    Børn &amp; Ungedag – aktiviteter og underholdning for de yngste.
-                    Om aftenen er der LARM! på programmet!
-                </li>
-                <li>
-                    <time datetime="2025-06-27">Fredag 27. juni</time>:
-                    Koncerter med Sømændene, George Michael Xperience, Specktors, OMAR og JIMILIAN.
-                </li>
-                <li>
-                    <time datetime="2025-06-28">Lørdag 28. juni</time>:
-                    Afslutningskoncerter med Sko &amp; Torp, Birthe Kjær, Keen On Queen og Burhan G.
-                </li>
-            </ul>
-        </section>
+                    <article aria-labelledby="om-overskrift" class="mb-4">
+                        <h2 id="om-overskrift" class="h2 fw-bold">Lidt om os</h2>
+                        <p>Fra den 22. til 28. juni forvandles Slagelse til én stor festplads fyldt med musik, oplevelser og fællesskab.
+                            Uanset om du er til stærke mænd, søde dyr, løb, koncerter eller børneaktiviteter, er der noget for enhver smag.</p>
+                    </article>
+                </div>
 
-        <article aria-labelledby="om-overskrift" class="mb-4">
-            <h2 id="om-overskrift">Lidt om os</h2>
-            <p>
-                Fra den 22. til 28. juni forvandles Slagelse til én stor festplads fyldt med musik, oplevelser og fællesskab.
-                Uanset om du er til stærke mænd, søde dyr, løb, koncerter eller børneaktiviteter, er der noget for enhver smag.
-            </p>
-        </article>
+                <!-- Right column: sidebar (image + info) -->
+                <aside class="col-lg-4">
+                    <div class="sidebar-sticky">
+                        <figure class="mb-4">
+                            <img class="img-fluid figure-img" src="https://slagelsefestuge.dk/wp-content/uploads/DSC_8411-1-1536x967.jpg"
+                                 alt="Publikum danser og smiler foran scenen under Slagelse Festuge" width="1536" height="967"
+                                 loading="lazy" decoding="async">
+                            <figcaption class="text-muted small mt-2">Festglade mennesker til Slagelse Festuge.</figcaption>
+                        </figure>
 
+                        <div class="card card-soft">
+                            <div class="card-body">
+                                <h2 class="h5 fw-semibold mb-3">Praktisk info</h2>
+                                <ul class="list-unstyled mb-0 footer-links">
+                                    <li class="mb-2">
+                                        <i class="bi bi-geo-alt me-2" aria-hidden="true"></i>
+                                        <span>Slagelse Centrum</span>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-envelope me-2" aria-hidden="true"></i>
+                                        <a href="mailto:info@slagelsefestuge.dk">info@slagelsefestuge.dk</a>
+                                    </li>
+                                    <li class="mb-2">
+                                        <i class="bi bi-telephone me-2" aria-hidden="true"></i>
+                                        <a href="tel:+4512345678">+45 12 34 56 78</a>
+                                    </li>
+                                    <li class="mt-3 d-flex gap-2">
+                                        <a class="btn btn-outline-secondary social-btn" href="https://www.instagram.com/slagelsefestuge/#" aria-label="Følg os på Instagram">
+                                            <i class="bi bi-instagram" aria-hidden="true"></i>
+                                        </a>
+                                        <a class="btn btn-outline-secondary social-btn" href="https://www.facebook.com/slagelsefestuge" aria-label="Følg os på Facebook">
+                                            <i class="bi bi-facebook" aria-hidden="true"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
 
+                    </div>
+                </aside>
+            </div>
+        </div>
     </section>
 
-    <section id="kontakt" class="container py-4" aria-labelledby="kontakt-heading">
-        <h2 id="kontakt-heading" class="mb-3">Kontakt os</h2>
+    <!-- SECTION 2: Kontakt -->
+    <section id="kontakt" class="section bg-light-subtle" aria-labelledby="kontakt-heading">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-7">
+                    <h2 id="kontakt-heading" class="h2 fw-bold mb-3">Kontakt os</h2>
+                    <div id="form-status" class="visually-hidden" aria-live="polite"></div>
 
-        <div id="form-status" class="visually-hidden" aria-live="polite"></div>
+                    <form id="contact-form" novalidate>
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Navn</label>
+                            <input id="name" name="name" type="text" class="form-control" required minlength="2"
+                                   autocomplete="name" aria-describedby="name-help name-error">
+                            <div id="name-help" class="form-text">Skriv dit fulde navn.</div>
+                            <p id="name-error" class="text-danger small mt-1" hidden></p>
+                        </div>
 
-        <form id="contact-form" novalidate>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input id="email" name="email" type="email" class="form-control" required autocomplete="email"
+                                   aria-describedby="email-help email-error">
+                            <div id="email-help" class="form-text">Vi kontakter dig kun vedr. din henvendelse.</div>
+                            <p id="email-error" class="text-danger small mt-1" hidden></p>
+                        </div>
 
-            <div class="mb-3">
-                <label for="name" class="form-label">Navn</label>
-                <input
-                        id="name" name="name" type="text" class="form-control"
-                        required minlength="2" autocomplete="name"
-                        aria-describedby="name-help name-error">
-                <div id="name-help" class="form-text">Skriv dit fulde navn.</div>
-                <p id="name-error" class="text-danger small mt-1" hidden></p>
-            </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Telefon</label>
+                            <div class="d-flex gap-2">
+                                <select id="dial-code" name="dial_code" class="form-select"
+                                        autocomplete="tel-country-code" aria-label="Landekode">
+                                    <option value="+45" selected>+45 (DK)</option>
+                                    <option value="+46">+46 (SE)</option>
+                                    <option value="+47">+47 (NO)</option>
+                                    <option value="+358">+358 (FI)</option>
+                                    <option value="+49">+49 (DE)</option>
+                                </select>
+                                <input id="phone" name="phone" type="tel" inputmode="tel" class="form-control" required
+                                       autocomplete="tel-national" maxlength="20" aria-describedby="phone-help phone-error">
+                            </div>
+                            <div id="phone-help" class="form-text">Eksempel: 12 34 56 78 (vælg landekode til venstre).</div>
+                            <p id="phone-error" class="text-danger small mt-1" hidden></p>
+                        </div>
 
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Dato for besøg/interesse</label>
+                            <input id="date" name="date" type="date" class="form-control" required
+                                   aria-describedby="date-help date-error">
+                            <div id="date-help" class="form-text">Vælg en passende dato.</div>
+                            <p id="date-error" class="text-danger small mt-1" hidden></p>
+                        </div>
 
-            <div class="mb-3">
-                <label for="email" class="form-label">Email</label>
-                <input
-                        id="email" name="email" type="email" class="form-control"
-                        required autocomplete="email"
-                        aria-describedby="email-help email-error">
-                <div id="email-help" class="form-text">Vi kontakter dig kun vedr. din henvendelse.</div>
-                <p id="email-error" class="text-danger small mt-1" hidden></p>
-            </div>
+                        <fieldset class="mb-3" aria-describedby="interest-help">
+                            <legend class="form-label">Interesser</legend>
+                            <div id="interest-help" class="form-text">Vælg gerne en eller flere.</div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="int-music" name="interests" value="music">
+                                <label class="form-check-label" for="int-music">Musik</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="int-food" name="interests" value="food">
+                                <label class="form-check-label" for="int-food">Mad &amp; Street Food</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="int-workshops" name="interests" value="workshops">
+                                <label class="form-check-label" for="int-workshops">Workshops</label>
+                            </div>
+                        </fieldset>
 
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Besked</label>
+                            <textarea id="message" name="message" class="form-control" rows="4" required
+                                      minlength="10" maxlength="1000" aria-describedby="message-help message-error"></textarea>
+                            <div id="message-help" class="form-text">Kort om din henvendelse (min. 10 tegn).</div>
+                            <p id="message-error" class="text-danger small mt-1" hidden></p>
+                        </div>
 
-            <div class="mb-3">
-                <label for="phone" class="form-label">Telefon</label>
-                <div class="d-flex gap-2">
-                    <select id="dial-code" name="dial_code" class="form-select"
-                            autocomplete="tel-country-code" aria-label="Landekode">
-                        <option value="+45" selected>+45 (DK)</option>
-                        <option value="+46">+46 (SE)</option>
-                        <option value="+47">+47 (NO)</option>
-                        <option value="+358">+358 (FI)</option>
-                        <option value="+49">+49 (DE)</option>
-                    </select>
-                    <input
-                            id="phone" name="phone" type="tel" inputmode="tel" class="form-control"
-                            required autocomplete="tel-national" maxlength="20"
-                            aria-describedby="phone-help phone-error">
+                        <div class="d-flex gap-2 align-items-center">
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </div>
+                        <noscript><p class="mt-3 text-warning">JavaScript er slået fra. HTML5-validering virker stadig.</p></noscript>
+                    </form>
                 </div>
-                <div id="phone-help" class="form-text">
-                    Eksempel: 12 34 56 78 (vælg landekode til venstre).
-                </div>
-                <p id="phone-error" class="text-danger small mt-1" hidden></p>
             </div>
-
-
-            <div class="mb-3">
-                <label for="date" class="form-label">Dato for besøg/interesse</label>
-                <input
-                        id="date" name="date" type="date" class="form-control"
-                        required aria-describedby="date-help date-error">
-                <div id="date-help" class="form-text">Vælg en passende dato.</div>
-                <p id="date-error" class="text-danger small mt-1" hidden></p>
-            </div>
-
-
-            <fieldset class="mb-3" aria-describedby="interest-help">
-                <legend class="form-label">Interesser</legend>
-                <div id="interest-help" class="form-text">Vælg gerne en eller flere.</div>
-
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="int-music" name="interests" value="music">
-                    <label class="form-check-label" for="int-music">Musik</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="int-food" name="interests" value="food">
-                    <label class="form-check-label" for="int-food">Mad &amp; Street Food</label>
-                </div>
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="int-workshops" name="interests" value="workshops">
-                    <label class="form-check-label" for="int-workshops">Workshops</label>
-                </div>
-            </fieldset>
-
-
-            <div class="mb-3">
-                <label for="message" class="form-label">Besked</label>
-                <textarea
-                        id="message" name="message" class="form-control" rows="4"
-                        required minlength="10" maxlength="1000"
-                        aria-describedby="message-help message-error"></textarea>
-                <div id="message-help" class="form-text">Kort om din henvendelse (min. 10 tegn).</div>
-                <p id="message-error" class="text-danger small mt-1" hidden></p>
-            </div>
-
-
-            <div class="d-flex gap-2 align-items-center">
-                <button type="submit" class="btn btn-primary">Send</button>
-            </div>
-
-            <noscript>
-                <p class="mt-3 text-warning">JavaScript er slået fra. HTML5-validering virker stadig.</p>
-            </noscript>
-        </form>
+        </div>
     </section>
 </main>
 
-<footer class="navbar bg-body-tertiary mt-auto" aria-label="Bundmenu">
-    <div class="container-fluid">
-        <p class="navbar-brand m-0">Slagelse Festuge</p>
-    </div>
+<!-- FOOTER -->
+<footer class="bg-body-tertiary pt-5" aria-label="Bundmenu">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-md-4">
+                <h2 class="h6 text-uppercase text-muted">Kontakt</h2>
+                <ul class="list-unstyled footer-links mb-0">
+                    <li class="mb-2"><i class="bi bi-geo-alt me-2" aria-hidden="true"></i>Slagelse Centrum</li>
+                    <li class="mb-2"><i class="bi bi-envelope me-2" aria-hidden="true"></i><a href="mailto:info@slagelsefestuge.dk">info@slagelsefestuge.dk</a></li>
+                    <li class="mb-2"><i class="bi bi-telephone me-2" aria-hidden="true"></i><a href="tel:+4512345678">+45 12 34 56 78</a></li>
+                </ul>
+            </div>
 
-    <a class="btn btn-primary" href="">
-        <i class="bi bi-instagram"></i>
-    </a>
+            <div class="col-md-4">
+                <h2 class="h6 text-uppercase text-muted">Følg os</h2>
+                <div class="d-flex gap-2">
+                    <a class="btn btn-outline-secondary social-btn" href="https://www.instagram.com/slagelsefestuge/#" aria-label="Følg os på Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+                    <a class="btn btn-outline-secondary social-btn" href="https://www.facebook.com/slagelsefestuge" aria-label="Følg os på Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+                    <!-- Tilføj flere ved behov -->
+                </div>
+            </div>
+
+            <div class="col-md-4">
+                <h2 class="h6 text-uppercase text-muted">Genveje</h2>
+                <ul class="list-unstyled footer-links mb-0">
+                    <li><a href="#program">Program</a></li>
+                    <li><a href="#kontakt">Kontakt</a></li>
+                    <li><a href="#bestyrelse">Bestyrelsen</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="my-4">
+
+        <div class="d-flex flex-column flex-sm-row align-items-center justify-content-between pb-4">
+            <p class="m-0 small text-muted">© <span id="year"></span> Slagelse Festuge. Alle rettigheder forbeholdes.</p>
+            <a class="small" href="#main">Til toppen</a>
+        </div>
+    </div>
 </footer>
+
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
