@@ -19,11 +19,10 @@
 </head>
 
 <body>
-<!-- Skip links -->
 <a class="visually-hidden-focusable skip-link" href="#main">Spring til indhold</a>
 <a class="visually-hidden-focusable skip-link" href="#program">Spring til program</a>
 
-<!-- NAV -->
+
 <nav class="navbar navbar-expand-lg bg-dark-subtle" aria-label="Hovedmenu">
     <div class="container">
         <a class="navbar-brand fw-semibold" href="/" aria-label="Forside: Slagelse Festuge">Slagelse Festuge</a>
@@ -98,7 +97,7 @@
                             <img class="img-fluid figure-img" src="https://slagelsefestuge.dk/wp-content/uploads/DSC_8411-1-1536x967.jpg"
                                  alt="Publikum danser og smiler foran scenen under Slagelse Festuge" width="1536" height="967"
                                  loading="lazy" decoding="async">
-                            <figcaption class="text-muted small mt-2">Festglade mennesker til Slagelse Festuge.</figcaption>
+                            <figcaption class="text-muted small mt-2 visually-hidden">Festglade mennesker til Slagelse Festuge.</figcaption>
                         </figure>
 
                         <div class="card card-soft">
@@ -118,10 +117,10 @@
                                         <a href="tel:+4512345678">+45 12 34 56 78</a>
                                     </li>
                                     <li class="mt-3 d-flex gap-2">
-                                        <a class="btn btn-outline-secondary social-btn" href="https://www.instagram.com/slagelsefestuge/#" aria-label="Følg os på Instagram">
+                                        <a class="btn btn-outline-secondary social-btn btn-pulse" href="https://www.instagram.com/slagelsefestuge/#" aria-label="Følg os på Instagram">
                                             <i class="bi bi-instagram" aria-hidden="true"></i>
                                         </a>
-                                        <a class="btn btn-outline-secondary social-btn" href="https://www.facebook.com/slagelsefestuge" aria-label="Følg os på Facebook">
+                                        <a class="btn btn-outline-secondary social-btn btn-pulse" href="https://www.facebook.com/slagelsefestuge" aria-label="Følg os på Facebook">
                                             <i class="bi bi-facebook" aria-hidden="true"></i>
                                         </a>
                                     </li>
@@ -220,10 +219,55 @@
             </div>
         </div>
     </section>
+
+    <section class="section mt-5" aria-labelledby="kontrast-rapport-heading">
+        <div class="container">
+            <h2 id="kontrast-rapport-heading" class="h4 fw-bold mb-3">Kontrast-rapport</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-striped align-middle w-auto">
+                    <thead class="table-light">
+                    <tr>
+                        <th scope="col">Teksttype</th>
+                        <th scope="col">Farvekombination</th>
+                        <th scope="col">Kontrastforhold</th>
+                        <th scope="col">Resultat</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>Stor tekst</td>
+                        <td><span class="badge bg-dark text-light">#212529</span> på <span class="badge bg-light text-dark">#ffffff</span></td>
+                        <td>12.6:1</td>
+                        <td><span class="badge bg-success">Bestået</span></td>
+                    </tr>
+                    <tr>
+                        <td>brødtekst</td>
+                        <td><span class="badge bg-secondary text-light">#6c757d</span> på <span class="badge bg-light text-dark">#ffffff</span></td>
+                        <td>5.4:1</td>
+                        <td><span class="badge bg-success">Bestået</span></td>
+                    </tr>
+                    <tr>
+                        <td>Links i tekst</td>
+                        <td><span class="badge bg-primary text-light">#0f6efd</span> på <span class="badge bg-light text-dark">#ffff</span></td>
+                        <td>4.49:1</td>
+                        <td><span class="badge bg-danger">Ikke bestået</span></td>
+                    </tr>
+                    <tr>
+                        <td>non text komponenter</td>
+                        <td><span class="badge bg-primary text-light">#0f6efd</span> på <span class="badge bg-dark-subtle text-dark">#ced4da</span></td>
+                        <td>3.01:1</td>
+                        <td><span class="badge bg-success">bestået</span></td>
+                    </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="text-muted small mt-2">* Minimumskrav: 4.5:1 for almindelig tekst, 3:1 for stor tekst (WCAG 2.1 AA).</p>
+        </div>
+    </section>
+
 </main>
 
-<!-- FOOTER -->
-<footer class="bg-body-tertiary pt-5" aria-label="Bundmenu">
+<nav class="bg-body-tertiary pt-5" aria-label="Bundmenu">
     <div class="container">
         <div class="row g-4">
             <div class="col-md-4">
@@ -240,7 +284,6 @@
                 <div class="d-flex gap-2">
                     <a class="btn btn-outline-secondary social-btn" href="https://www.instagram.com/slagelsefestuge/#" aria-label="Følg os på Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
                     <a class="btn btn-outline-secondary social-btn" href="https://www.facebook.com/slagelsefestuge" aria-label="Følg os på Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
-                    <!-- Tilføj flere ved behov -->
                 </div>
             </div>
 
@@ -261,7 +304,7 @@
             <a class="small" href="#main">Til toppen</a>
         </div>
     </div>
-</footer>
+</nav>
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>

@@ -2,7 +2,7 @@
 @import "../node_modules/bootstrap/scss/functions";
 
 // 2. Include any default variable overrides here
-$link-decoration: none;
+
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "../node_modules/bootstrap/scss/variables";
@@ -29,3 +29,28 @@ main .section { padding-block: clamp(2rem, 3vw, 3rem); }
 .footer-links a:hover { text-decoration: underline; }
 .social-btn { width: 44px; height: 44px; display:inline-flex; align-items:center; justify-content:center; border-radius:999px; }
 .social-btn:focus-visible { outline: 3px solid rgba(13,110,253,.35); outline-offset: 2px; }
+
+
+  @keyframes pulse {
+    0% { transform: scale(1); opacity: 1; }
+    50% { transform: scale(1.05); opacity: 0.9; }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .btn-pulse {
+      animation: pulse 2s infinite ease-in-out;
+    }
+  }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-pulse {
+    animation: none;
+  }
+}
+
+a {
+  text-decoration: underline;
+}
+
+
